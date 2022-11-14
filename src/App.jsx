@@ -1,15 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Nav from "./components/nav";
-import Header from "./components/header";
-import Boxes from "./components/4 boxes";
+import {BrowserRouter, Route} from "react-router-dom";
+import Nav from "./components/Nav";
+import Home from "./pages/Home";
+
 function App() {
   return (
-    <div className="nav-header">
+    <BrowserRouter>
       <Nav />
-      <Header />
-      <Boxes />
-    </div>
+      <Route path="/" exact component={Home} />
+    </BrowserRouter>
   );
 }
 
