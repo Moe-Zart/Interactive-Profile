@@ -55,8 +55,10 @@ html{
 
 .header_name{
   color: transparent;
+  /* text stroke */
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: #f5f5f5;
+  /*  */
   font-size: 180px;
   letter-spacing: 32px;
   margin: 0 140px;
